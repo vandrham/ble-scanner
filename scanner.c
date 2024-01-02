@@ -196,7 +196,7 @@ int main()
 					ba2str( &(info->bdaddr), addr);
 					printf("%s %d", addr, (int8_t)info->data[info->length]);
 					for (int i = 0; i < info->length; i++)
-						printf(" %02X", (unsigned char)info->data[i]);
+						printf("%02hhX", (unsigned char)info->data[i]);
 					printf("\n");
 					offset = info->data + info->length + 2;
 				}
